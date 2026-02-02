@@ -1,0 +1,12 @@
+﻿CREATE TABLE [dbo].[UserGoal]
+(
+	[GoalId] INT NOT NULL PRIMARY KEY,
+	[UserID] INT NOT NULL,
+	[GoalType] NVARCHAR(25) NOT NULL,
+	[GoalDescription] NVARCHAR(250) NULL,
+	[DateCreated] DATETIME NOT NULL DEFAULT GETDATE(),
+	[Deadline] DATETIME NULL,
+	[IsCompleted] BIT NOT NULL DEFAULT 0,
+
+	CONSTRAINT [FK_UserGoal_User_UserID] FOREIGN KEY (UserID) REFERENCES [dbo].[User](UserID)
+)
