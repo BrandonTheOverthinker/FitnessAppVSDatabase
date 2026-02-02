@@ -1,4 +1,4 @@
-CREATE TABLE [dbo] [UserExercise]
+CREATE TABLE [dbo].[UserExercise]
 (
     [UserID] INT NOT NULL,
     [ExerciseID] INT NOT NULL,
