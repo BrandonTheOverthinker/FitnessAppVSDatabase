@@ -63,5 +63,7 @@
     <Build Include="Exercise.sql" />
     <Build Include="UserExercise.sql" />
     <Build Include="UserPersonalRecord.sql" />
+    <Build Include="Set.sql" />
+    <Build Include="ExerciseLog.sql" />
   </ItemGroup>
 </Project>
