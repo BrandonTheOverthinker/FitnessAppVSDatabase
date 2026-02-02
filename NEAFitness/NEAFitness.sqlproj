@@ -67,5 +67,6 @@
     <Build Include="ExerciseLog.sql" />
     <Build Include="Food.sql" />
     <Build Include="FoodLog.sql" />
+    <Build Include="Macronutrients.sql" />
   </ItemGroup>
 </Project>
