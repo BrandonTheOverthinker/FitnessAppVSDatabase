@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[XPLevel]
+(
+	[TotalXP] INT NOT NULL PRIMARY KEY,
+	[UserID] INT NOT NULL,
+	[Level] INT NOT NULL,
+
+	CONSTRAINT [FK_XPLevel_User_UserID] FOREIGN KEY (UserID) REFERENCES [dbo].[User](UserID)
+)

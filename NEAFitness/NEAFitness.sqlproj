@@ -72,5 +72,6 @@
     <Build Include="NutritionGoal.sql" />
     <Build Include="WeightGoal.sql" />
     <Build Include="ExerciseGoal.sql" />
+    <Build Include="XPLevel.sql" />
   </ItemGroup>
 </Project>
