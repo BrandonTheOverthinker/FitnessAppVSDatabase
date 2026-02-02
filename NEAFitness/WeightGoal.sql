@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[WeightGoal]
+(
+	[WGoalId] INT NOT NULL PRIMARY KEY,
+	[GoalID] INT NOT NULL,
+	[TargetBW] DECIMAL(5,1) NOT NULL,
+	[StartBW] DECIMAL(5,1) NOT NULL,
+
+	CONSTRAINT [FK_WeightGoal_Goal_GoalID] FOREIGN KEY (GoalID) REFERENCES [dbo].[UserGoal](GoalID)
+)
