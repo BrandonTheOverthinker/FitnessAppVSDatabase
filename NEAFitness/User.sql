@@ -5,5 +5,7 @@
 	[PasswordHash] NVARCHAR(255) NOT NULL,
 	[UserDOB] DATE NULL,
 	[BodyWeight] DECIMAL(5,1) NULL,
-	[Height] DECIMAL(5,1) NULL
+	[Height] DECIMAL(5,1) NULL,
+
+	CONSTRAINT [UQ_User_UserName] UNIQUE (UserName)
 )
