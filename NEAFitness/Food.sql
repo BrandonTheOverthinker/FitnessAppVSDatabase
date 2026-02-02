@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[Food]
+(
+	[FoodId] INT NOT NULL PRIMARY KEY,
+	[UserID] INT NOT NULL,
+	[FoodName] NVARCHAR(50) NOT NULL,
+
+	CONSTRAINT [FK_Food_User_UserID] FOREIGN KEY (UserID) REFERENCES [dbo].[User](UserID),
+)
