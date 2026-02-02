@@ -66,5 +66,6 @@
     <Build Include="Set.sql" />
     <Build Include="ExerciseLog.sql" />
     <Build Include="Food.sql" />
+    <Build Include="FoodLog.sql" />
   </ItemGroup>
 </Project>
