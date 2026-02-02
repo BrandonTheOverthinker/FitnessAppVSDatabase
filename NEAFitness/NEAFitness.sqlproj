@@ -60,5 +60,8 @@
   <ItemGroup>
     <Build Include="User.sql" />
     <Build Include="Workout.sql" />
+    <Build Include="Exercise.sql" />
+    <Build Include="UserExercise.sql" />
+    <Build Include="UserPersonalRecord.sql" />
   </ItemGroup>
 </Project>
