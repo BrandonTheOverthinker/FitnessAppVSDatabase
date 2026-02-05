@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{dfca0b69-146a-46a5-9569-7d6d0e791fa7}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -62,7 +62,7 @@
     <Build Include="Workout.sql" />
     <Build Include="Exercise.sql" />
     <Build Include="UserExercise.sql" />
-	<Build Include="ExerciseLog.sql" />
+    <Build Include="ExerciseLog.sql" />
     <Build Include="UserPersonalRecord.sql" />
     <Build Include="Set.sql" />
     <Build Include="Food.sql" />
