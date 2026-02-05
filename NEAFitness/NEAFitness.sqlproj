@@ -61,10 +61,10 @@
     <Build Include="User.sql" />
     <Build Include="Workout.sql" />
     <Build Include="Exercise.sql" />
-    <Build Include="ExerciseLog.sql" />
+    <Build Include="UserExercise.sql" />
+	<Build Include="ExerciseLog.sql" />
     <Build Include="UserPersonalRecord.sql" />
     <Build Include="Set.sql" />
-    <Build Include="ExerciseLog.sql" />
     <Build Include="Food.sql" />
     <Build Include="FoodLog.sql" />
     <Build Include="Macronutrients.sql" />
