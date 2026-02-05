@@ -9,7 +9,7 @@ CREATE TABLE [dbo].[UserPersonalRecord]
 
     CONSTRAINT [PK_UserPR] PRIMARY KEY (UserID, ExerciseID, PRType), -- Composite Key
 
-    CONSTRAINT [FK_UserPR_UserExercise] FOREIGN KEY (UserID, ExerciseID) REFERENCES [dbo].[UserExercise](UserID, ExerciseID),
+    CONSTRAINT [FK_UserPR_UserExercise] FOREIGN KEY (UserID, ExerciseID) REFERENCES [dbo].[Exercise](UserID, ExerciseID),
     CONSTRAINT [FK_UserPR_Set] FOREIGN KEY (SetID) REFERENCES [dbo].[Set](SetID),
 
     CONSTRAINT [CHK_UserPR_PRValue] CHECK (PRValue >= 0)

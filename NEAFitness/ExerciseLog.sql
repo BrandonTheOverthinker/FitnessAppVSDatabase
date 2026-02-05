@@ -8,7 +8,7 @@
 	[ExerciseNotes] NVARCHAR(500) NULL,
 
 	CONSTRAINT [FK_ExerciseLog_Workout_WorkoutId] FOREIGN KEY ([WorkoutId]) REFERENCES [dbo].[Workout]([WorkoutId]),
-	CONSTRAINT [FK_ExerciseLog_UserExercise] FOREIGN KEY (UserID, ExerciseID) REFERENCES [dbo].[UserExercise](UserID, ExerciseID),
+	CONSTRAINT [FK_ExerciseLog_UserExercise] FOREIGN KEY (UserID, ExerciseID) REFERENCES [dbo].[Exercise](UserID, ExerciseID),
 
 	CONSTRAINT [CHK_ExerciseLog_ExerciseOrder] CHECK (ExerciseOrder IS NULL OR ExerciseOrder >= 1)
 )
