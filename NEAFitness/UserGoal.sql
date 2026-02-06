@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[UserGoal]
 (
-	[GoalId] INT NOT NULL PRIMARY KEY,
+	[GoalId] INT NOT NULL PRIMARY KEY IDENTITY(1,1),
 	[UserID] INT NOT NULL,
 	[GoalType] NVARCHAR(25) NOT NULL,
 	[GoalDescription] NVARCHAR(250) NULL,

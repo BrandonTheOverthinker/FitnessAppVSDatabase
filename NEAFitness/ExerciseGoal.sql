@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[ExerciseGoal]
 (
-	[EGoalId] INT NOT NULL PRIMARY KEY,
+	[EGoalId] INT NOT NULL PRIMARY KEY IDENTITY(1,1),
 	[GoalID] INT NOT NULL,
 	[ExerciseID] INT NOT NULL,
 	[TargetWeight] DECIMAL(7,2) NOT NULL,

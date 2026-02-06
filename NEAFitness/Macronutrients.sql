@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Macronutrients]
 (
-	[MacroId] INT NOT NULL PRIMARY KEY,
+	[MacroId] INT NOT NULL PRIMARY KEY IDENTITY(1,1),
 	[FoodId] INT NOT NULL,
 	[Calories] INT NOT NULL,
 	[Protein] DECIMAL(7,2) NOT NULL,

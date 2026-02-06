@@ -1,6 +1,6 @@
 CREATE TABLE [dbo].[Exercise]
 (
-    [ExerciseID] INT NOT NULL PRIMARY KEY,
+    [ExerciseID] INT NOT NULL PRIMARY KEY IDENTITY(1,1),
     [ExerciseName] NVARCHAR(50) NOT NULL,
     [ExerciseType] NVARCHAR(20) NOT NULL,
 

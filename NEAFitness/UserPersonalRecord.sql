@@ -1,6 +1,6 @@
 CREATE TABLE [dbo].[UserPersonalRecord]
 (
-    [PRID] INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    [PRID] INT NOT NULL PRIMARY KEY IDENTITY(1,1),
     [UserID] INT NOT NULL,
     [ExerciseID] INT NOT NULL,
     [PRType] NVARCHAR(20) NOT NULL, -- e.g. "MaxWeight", "MaxReps", "MaxDistance" etc
