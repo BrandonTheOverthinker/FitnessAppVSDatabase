@@ -8,6 +8,7 @@
 	[Height] DECIMAL(5,1) NULL,
 	[Gender] NVARCHAR(20) NULL,
 	[ActivityLevel] NVARCHAR(20) NULL,
+	[MaintenanceGoal] DECIMAL(5, 0) NULL,
 
 	CONSTRAINT [UQ_User_UserName] UNIQUE (UserName)
 )
