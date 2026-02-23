@@ -65,9 +65,8 @@
     <Build Include="ExerciseLog.sql" />
     <Build Include="UserPersonalRecord.sql" />
     <Build Include="Set.sql" />
-    <Build Include="Food.sql" />
+    <Build Include="FoodItem.sql" />
     <Build Include="FoodLog.sql" />
-    <Build Include="Macronutrients.sql" />
     <Build Include="UserGoal.sql" />
     <Build Include="NutritionGoal.sql" />
     <Build Include="WeightGoal.sql" />

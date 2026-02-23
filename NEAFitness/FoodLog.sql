@@ -1,9 +1,12 @@
 ﻿CREATE TABLE [dbo].[FoodLog]
 (
 	[FoodLogId] INT NOT NULL PRIMARY KEY IDENTITY(1,1),
-	[FoodId] INT NOT NULL,
-	[LogTime] DATETIME NOT NULL,
-	[Quantity] DECIMAL(7,2) NOT NULL,
+	[UserId] INT NOT NULL,
+	[FoodItemId] INT NOT NULL,
 
-	CONSTRAINT [FK_FoodLog_Food_FoodId] FOREIGN KEY (FoodId) REFERENCES [dbo].[Food](FoodId)
+	[LogTime] DATETIME NOT NULL,
+	[Quantity] DECIMAL(16,2) NOT NULL,
+
+	CONSTRAINT [FK_FoodLog_User_UserId] FOREIGN KEY (UserId) REFERENCES [dbo].[User](UserID),
+	CONSTRAINT [FK_FoodLog_FoodItem_FoodItemId] FOREIGN KEY (FoodItemId) REFERENCES [dbo].[FoodItem](FoodItemId)
 )
