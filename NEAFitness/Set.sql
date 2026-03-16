@@ -8,7 +8,6 @@
 	[SetWeightKG] DECIMAL(7,2) NULL,
 	[DistanceM] INT NULL,
 	[TimeSeconds] INT NULL,
-	[RPE] DECIMAL(3,1) NULL,
 
 	CONSTRAINT [FK_Set_ExerciseLog_ExerciseLogID] FOREIGN KEY (ExerciseLogID) REFERENCES dbo.[ExerciseLog](ExerciseLogId),
 
@@ -18,6 +17,5 @@
 	CONSTRAINT [CHK_Set_Reps] CHECK (Reps IS NULL OR Reps >= 0),
 	CONSTRAINT [CHK_Set_SetWeightKG] CHECK (SetWeightKG IS NULL OR SetWeightKG >= 0),
 	CONSTRAINT [CHK_Set_DistanceM] CHECK (DistanceM IS NULL OR DistanceM >= 0),
-	CONSTRAINT [CHK_Set_TimeSeconds] CHECK (TimeSeconds IS NULL OR TimeSeconds >= 0),
-	CONSTRAINT [CHK_Set_RPE] CHECK (RPE IS NULL OR (RPE >= 0 AND RPE <= 10))
+	CONSTRAINT [CHK_Set_TimeSeconds] CHECK (TimeSeconds IS NULL OR TimeSeconds >= 0)
 )
