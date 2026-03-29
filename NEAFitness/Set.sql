@@ -8,6 +8,7 @@
 	[SetWeightKG] DECIMAL(7,2) NULL,
 	[DistanceM] INT NULL,
 	[TimeSeconds] INT NULL,
+	[RestTime] INT NULL,
 
 	CONSTRAINT [FK_Set_ExerciseLog_ExerciseLogID] FOREIGN KEY (ExerciseLogID) REFERENCES dbo.[ExerciseLog](ExerciseLogId),
 
